@@ -899,12 +899,25 @@ h1, h2, h3, h4, h5, h6, p, ul {
     resize: none;
     padding: 11px 15px;
     margin-top: 4px;
-    margin-bottom: 20px;
     border-radius: 4px;
     border: none;
     outline: 1px solid rgba(33, 33, 33, 0.2);
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 12px;
+}
+
+.label-tarea {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .form {
@@ -924,7 +937,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     height: 40px;
     width: 448px;
     margin-top: 4px;
-    margin-bottom: 10px;
     padding-left: 40px; 
     border-radius: 4px;
     border: none;
@@ -934,7 +946,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .form-icon {
     position: absolute;
-    top : 40%;
+    top : 50%;
     margin-left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -948,7 +960,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     align-items: center;
     margin: 0 auto;
     transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 30px;
+}
+
+.foot-form {
+    display: block;
 }
 
 .input-checkbox {
@@ -989,8 +1004,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.imput:focus-within {
+.imput:focus {
     outline: 1px solid #2196F3;
+    fill: #2196F3;
+}
+
+.imput:focus + .form-icon {
     fill: #2196F3;
 }
 
@@ -1008,7 +1027,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     border: 1px solid transparent;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 .form-btn:hover, .form-btn:focus{
@@ -1031,6 +1050,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .footer-subscribe {
     display: flex;
+    margin-top: 20px;
 }
 
 .footer-input-mail {
